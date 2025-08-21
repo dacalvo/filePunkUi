@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>filePunkUi — Campo File Brutalista</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../src/components/root.css">
+    <link rel="stylesheet" href="../src/themes/filePunkElevado.css">
+    <link rel="stylesheet" href="../src/themes/filePunkCircular.css">
+    <link rel="stylesheet" href="../src/themes/filePunkSoltar.css">
+    <link rel="stylesheet" href="../src/components/barraProgreso.css">
+    <link rel="stylesheet" href="../src/animations/animationFilePunk.css">
+    <style>
+    .footer-brutal {
+        width: 100%;
+        background-color: var(--color-principal-oscuro);
+        padding: 2rem 0;
+        text-align: center;
+        border-top: 1px solid var(--color-secundario-oscuro);
+        box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .licencia-mit {
+    font-size: 0.8rem;
+    color: var(--color-texto-principal);
+    opacity: 0.6;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.licencia-mit a {
+    color: var(--color-acento-claro);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.licencia-mit a:hover {
+    text-decoration: underline;
+}
+    </style>
+</head>
+
+<body>
+    <header class="text-center">
+        <h3>FILEPUNK-UI - CLÁSICO</h3>
+        <small>Diego Alejandro Calvo Orozco</small>
+        <hr>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <!-- inicio del estilo clasico -->
+                <h5>Estilo Clásico</h5>
+                <hr>
+                <div class="file-upload-elevado">
+                    <input 
+                    type="file" 
+                    id="file1" 
+                    class="input-oculto"
+                    >
+                    <label for="file1"><i class="fas fa-cloud-upload-alt"></i> Subir Archivo</label>
+                </div>
+                <!--fin: estilo clasico -->
+            </div>
+            <div class="col-md-4">
+                <!-- inicio del estilo clasico con animacion -->
+                <h5>Estilo Clásico con animación de icono</h5>
+                <hr>
+                <div class="file-upload-elevado">
+                    <input 
+                    type="file" 
+                    id="file2" 
+                    class="input-oculto">
+                    <label for="file2" class="animar-hover"><i class="fas fa-cloud-upload-alt"></i> Subir Archivo</label>
+                </div>
+                <!--Fin: estilo clasico con animacion -->
+            </div>
+            <div class="col-md-4">
+                <h5>Estilo Clásico con contenedor de carga</h5>
+                <hr>
+                <div class="file-upload-elevado">
+                    <input type="file" id="file3" class="input-oculto">
+                    <label for="file3"><i class="fas fa-cloud-upload-alt me-2"></i> Subir Archivo</label>
+                    <div id="estadoCarga" class="estado-carga">Seleccione un archivo</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <!-- inicio del estilo clasico con barra de progreso -->
+            <h5>Estilo Clásico con barra de progreso</h5>
+            <hr>
+            <div class="file-upload-elevado">
+                <input 
+                type="file" 
+                id="file4" 
+                class="input-oculto"
+                >
+                <label for="file4"><i class="fas fa-cloud-upload-alt"></i> Subir Archivo</label>
+                <!-- inicio barra de progreso -->
+                <div class="barra-progreso-contenedor">
+                    <div class="barra-progreso-lleno"></div>
+                </div>
+                <!-- inicio del contenedor de cargar para mensajes -->
+                <div id="estadoCargaBarra" class="estado-carga">Seleccione un archivo</div>
+            </div>
+            <!--fin: estilo clasico  -->
+        </div>
+    </div>
+
+    <!-- Estilos de file input modo iconos  -->
+    <div class="w-100 p-2 mt-5 text-center">
+        <hr>
+        <h3>FILEPUNK-UI - ICONOS</h3>
+        <small>Diego Alejandro Calvo Orozco</small>
+        <hr>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <h5 class="text-center">Estilo circular sencillo centrado</h5>
+                <hr>
+                <!-- Inicio del file circular -->
+                <div class="file-upload-circular">
+                    <input type="file" id="fileC1" class="input-oculto">
+                    <label for="fileC1" class="circular-upload-label">
+                        <i class="fa-solid fa-upload"></i>
+                    </label>
+                </div>
+                <!--Fin: Inicio del file circular -->
+            </div>
+
+            <div class="col-md-4">
+                <h5 class="text-center">Estilo circular animado</h5>
+                <hr>
+                <!-- Inicio del file circular -->
+                <div class="file-upload-circular">
+                    <input type="file" id="fileC2" class="input-oculto">
+                    <label for="fileC2" class="circular-upload-label circulo_animate">
+                        <i class="fa-solid fa-upload icono-encoger"></i>
+                    </label>
+                </div>
+                <!--Fin: Inicio del file circular -->
+            </div>
+
+            <div class="col-md-4">
+                <h5 class="text-center">Estilo circular contenedor de carga</h5>
+                <hr>
+                <!-- Inicio del file circular -->
+                <div class="file-upload-circular">
+                    <input type="file" id="fileC3" class="input-oculto">
+                    <label for="fileC3" class="circular-upload-label">
+                        <i class="fa-solid fa-upload"></i>
+                    </label>
+                </div>
+                <div class="contenedorCargarC3">Selecione un archivo</div>
+                <!--Fin: Inicio del file circular -->
+            </div>
+
+            <div class="col-md-4">
+                <h5 class="text-center">Estilo circular barra progreso</h5>
+                <hr>
+                <!-- Inicio del file circular -->
+                <div class="file-upload-circular">
+                    <input type="file" id="fileC4" class="input-oculto">
+                    <label for="fileC4" class="circular-upload-label">
+                        <i class="fa-solid fa-upload"></i>
+                    </label>
+                </div>
+                <!-- inicio barra de progreso -->
+                <div class="barra-progreso-contenedor">
+                    <div id="barraC4" class="barra-progreso-lleno"></div>
+                </div>
+                <div class="contenedorCargarProgresoC3">Selecione un archivo</div>
+                <!--Fin: Inicio del file circular -->
+
+            </div>
+        </div>
+        <!-- EStilos de soltar archivos  -->
+        <div class="conatiner-fluid mt-2 mb-2">
+            <div class="text-center w-100">
+                <hr>
+                    <h3>FILEPUNK-UI - Soltar</h3>
+                    <small>Diego Alejandro Calvo Orozco</small>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="text-center">Drag & Drop con bloqueo de busqueda solo se permite arrastrar</h5>
+                    <div class="file-upload-rectangular" id="dropZona">
+                        <input type="file" id="fileS3" class="input-oculto">
+                        
+                        <label for="fileS3" class="rectangular-upload-label">
+                            <i class="fas fa-cloud-upload-alt icono-principal"></i>
+                        </label>
+                        <p id="infoZona">Arrastre el archivo a la zona</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <h5 class="text-center">Drag & Drop sin bloque de busqueda puede soltar o buscar </h5>
+                    <div class="file-upload-rectangular" id="dropZonaS4">
+                        <input type="file" id="fileS4" class="input-oculto">
+                        
+                        <label for="fileS4" class="rectangular-upload-label">
+                            <i class="fas fa-cloud-upload-alt icono-principal"></i>
+                        </label>
+                        <p id="infoZonaS4">Arrastre el archivo a la zona</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <h5 class="text-center">Drag & Drop con detector de zona de arrastre, arrastrar o buscar </h5>
+                    <div class="file-upload-rectangular" id="dropZonaS5">
+                        <input type="file" id="fileS5" class="input-oculto">
+                        
+                        <label for="fileS5" class="rectangular-upload-label">
+                            <i class="fas fa-cloud-upload-alt icono-principal"></i>
+                        </label>
+                        <p id="infoZonaS5">Arrastre el archivo a la zona</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="footer-brutal">
+    <p class="licencia-mit">
+        Estos componentes están bajo la <a href="https://opensource.org/licenses/MIT" target="_blank">Licencia MIT</a>.
+        <br>Copyright &copy; 2025 Diego Alejandro Calvo Orozco.
+    </p>
+    </footer>
+    <script src="../src/js/filePunk-ui.js"></script>
+    <script src="../src/js/filePunkBarraProgreso.js"></script>
+    <script src="../src/js/filePunkCircular-ui.js"></script>
+    <script src="../src/js/filePunkBarraProgresoCircular.js"></script>
+    <script src="../src/js/filePunkArrastrarSencillo.js"></script>
+    <script src="../src/js/filePunkArrastrarBuscar.js"></script>
+    <script src="../src/js/filePunkArrastrarDetectarZona.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+/* ==========================================================================
+    Archivo: BarraProgreso.css
+    Autor: Diego Alejandro Calvo(HB)
+    Proyecto: Librería CSS para campos file
+    Copyright © 2025 Diego Alejandro Calvo orozco. Todos los derechos reservados.
+    Licencia: MIT
+ ========================================================================= */
+/* Contenedor de la barra de progreso */
+.barra-progreso-contenedor {
+    width: 100%;
+    height: 8px;
+    margin-top: 15px;
+    background-color: #555877;
+    border-radius: 4px;
+    overflow: hidden; /* Importante para que la barra de adentro no se salga */
+}
+
+/* La barra que se llenará con el progreso */
+.barra-progreso-lleno {
+    height: 100%;
+    width: 0%; /* Inicia en 0% y el JS lo va aumentando */
+    background-color: var(--color-acento-claro);
+    transition: width 0.3s ease-in-out; /* Animación para el llenado */
+}
+
+/* Estilo para cuando la carga es completa (con JS) */
+.barra-progreso-lleno.completo {
+    background-color: #00ff8c; /* Verde de éxito */
+    box-shadow: 0 0 10px #00ff8c;
+}

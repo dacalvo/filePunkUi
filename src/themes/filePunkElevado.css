@@ -1,0 +1,65 @@
+/* ==========================================================================
+    Archivo: filepunkElevad0-ui.css
+    Autor: Diego Alejandro Calvo(HB)
+    Proyecto: Librería CSS para campos file
+    Copyright © 2025 Diego Alejandro Calvo orozco. Todos los derechos reservados.
+    Licencia: MIT
+ ========================================================================= */
+
+.input-oculto {
+    display: none;
+}
+.file-upload-elevado label {
+    display: inline-block;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    background-color: var(--color-secundario-oscuro);
+    color: var(--color-texto-principal);
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px var(--color-sombra-oscura);
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+.file-upload-elevado label:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px var(--color-sombra-oscura);
+}
+.file-upload-elevado label i {
+    font-size: 1.2em;
+
+}
+
+/* Estilo del contenedor de estado */
+.estado-carga {
+    margin-top:10px;
+    font-weight: bold;
+    font-size: 1em;
+    color: var(--color-texto-carga);
+    text-align: center;
+
+
+}
+
+/* Clases para estados específicos (se agregan con JS) */
+.estado-carga.cargando {
+    color: var(--color-acento-claro);
+}
+
+.estado-carga.exito {
+    color: #00ff8c; 
+}
+
+.estado-carga.error {
+    color: #ff3b3b;
+}
+
+/* Clase que añade la animación al pasar el mouse */
+.animar-hover:hover .fas.fa-cloud-upload-alt {
+    animation: girar-nube 1s infinite linear;
+}
+
+@keyframes girar-nube {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

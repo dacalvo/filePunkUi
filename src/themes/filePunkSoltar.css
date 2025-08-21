@@ -1,0 +1,63 @@
+/* ==========================================================================
+    Archivo: filepunkSoltar.css
+    Autor: Diego Alejandro Calvo(HB)
+    Proyecto: Librería CSS para campos file
+    Copyright © 2025 Diego Alejandro Calvo orozco. Todos los derechos reservados.
+    Licencia: MIT
+ ========================================================================= */
+
+/* Estilo del contenedor principal */
+.file-upload-rectangular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-texto-principal);
+    padding: 30px;
+    border-radius: 12px;
+    border: 3px dashed var(--color-acento-claro);
+    background-color: var(--color-principal-oscuro);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* La etiqueta que funciona como el botón/área de carga */
+.rectangular-upload-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 100px;
+    background-color: var(--color-secundario-oscuro);
+    border: 2px solid var(--color-acento-claro);
+    border-radius: 8px; /* Bordes rectangulares suaves */
+    cursor: pointer;
+    box-shadow: 0 5px 15px var(--color-sombra-oscura);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Estilo del ícono */
+.rectangular-upload-label .icono-principal {
+    font-size: 3rem;
+    color: var(--color-acento-claro);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el mouse sobre el área */
+.rectangular-upload-label:hover {
+    background-color: #555877;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Efecto al hacer clic en el área */
+.rectangular-upload-label:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.file-upload-rectangular.activo {
+  border: 2px dashed #00ff8c;
+  background-color: #111;
+  color: #00ff8c;
+}

@@ -1,0 +1,8 @@
+:root {
+    --color-principal-oscuro: #1a1a2e;
+    --color-secundario-oscuro: #38385e;
+    --color-acento-claro: #aeefff;
+    --color-texto-principal: #e0e0e0;
+    --color-sombra-oscura: rgba(0, 0, 0, 0.2);
+    --color-texto-carga:#e0e0e0;
+}

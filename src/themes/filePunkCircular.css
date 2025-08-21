@@ -1,0 +1,50 @@
+/* ==========================================================================
+    Archivo: filepunkCircular.css
+    Autor: Diego Alejandro Calvo(HB)
+    Proyecto: Librería CSS para campos file
+    Copyright © 2025 Diego Alejandro Calvo orozco. Todos los derechos reservados.
+    Licencia: MIT
+ ========================================================================= */
+
+/* Estilo del contenedor principal */
+.file-upload-circular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-texto-principal);
+}
+
+/* El círculo de carga (es la etiqueta) */
+.circular-upload-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    background-color: var(--color-secundario-oscuro);
+    border: 2px solid var(--color-acento-claro);
+    border-radius: 50%; /* La clave para que sea un círculo */
+    cursor: pointer;
+    box-shadow: 0 5px 15px var(--color-sombra-oscura);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Estilo del ícono dentro del círculo */
+.circular-upload-label i {
+    font-size:2.5rem;
+    color: var(--color-acento-claro);
+}
+/* Efecto al pasar el mouse sobre el círculo */
+.circular-upload-label:hover {
+    background-color: #555877;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/*******Estilos del contenedor de carga************/
+.contenedorCargarC3{
+    text-align: center;
+}
+

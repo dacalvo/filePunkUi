@@ -1,0 +1,25 @@
+/* ==========================================================================
+    Archivo: animationsFilePunk.css
+    Autor: Diego Alejandro Calvo(HB)
+    Proyecto: Librería CSS para campos file
+    Copyright © 2025 Diego Alejandro Calvo orozco. Todos los derechos reservados.
+    Licencia: MIT
+ ========================================================================= */
+/************************************Animaciones para los file Circulares*********************/
+
+/* Estilo del ícono dentro del círculo */
+.circular-upload-label .icono-encoger {
+    color: var(--color-acento-claro);
+    transition: transform 0.3s ease-in-out; 
+}
+
+/* Y la animación solo se aplica a la clase que creamos */
+.circular-upload-label:hover .icono-encoger{
+    transform: scale(0.4);
+}
+
+/* El círculo se "arruga" al hacer clic */
+.circulo_animated:active {
+    transform: scale(0.95); /* Se encoge un 5% */
+    box-shadow: 0 2px 5px rgba(177, 16, 16, 0.3); /* La sombra se reduce para simular que se presiona */
+}
