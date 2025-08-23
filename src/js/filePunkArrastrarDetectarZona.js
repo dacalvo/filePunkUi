@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!archivo) return;
 
         input.files = e.dataTransfer.files;
-        info.textContent = `✅ "${archivo.name}" cargado correctamente (drag & drop)`;
+        info.textContent = `"${archivo.name}" cargado correctamente (drag & drop)`;
         console.log(`[fileDrop] Drag & drop: ${archivo.name}`);
     });
 
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const archivo = input.files[0];
         if (!archivo) return;
 
-        info.textContent = `✅ "${archivo.name}" cargado correctamente (selección manual)`;
+        info.textContent = `"${archivo.name}" cargado correctamente (selección manual)`;
         console.log(`[fileDrop] Selección manual: ${archivo.name}`);
     });
 });
